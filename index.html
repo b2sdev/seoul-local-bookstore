@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_116dcabb1ae46640daf82ac5f36f0179 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_116dcabb1ae46640daf82ac5f36f0179" ></div>
+        
+</body>
+<script>    
+    
+            var map_116dcabb1ae46640daf82ac5f36f0179 = L.map(
+                "map_116dcabb1ae46640daf82ac5f36f0179",
+                {
+                    center: [37.5642135, 127.0016985],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_931bbba79efb647119d9707239e6f1b2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var marker_fa7b0ba001795666516db3fa08a83bed = L.marker(
+                [37.5568062764679, 127.013513144413],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_d88507e4bcc3957a6609c145ad7f7709 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_fa7b0ba001795666516db3fa08a83bed.setIcon(icon_d88507e4bcc3957a6609c145ad7f7709);
+        
+    
+        var popup_23a26f119fe3fd47c89547bd4912a27b = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_b738005745ced223b31752da9fa89860 = $(`<div id="html_b738005745ced223b31752da9fa89860" style="width: 100.0%; height: 100.0%;"> <h4>소수책방</h4> <p>평범한 건물의 투박한 철문을 열고 들어서면 이색적인 공간이 나타난다. 마치 바에 온 것 같은 느낌을 주는 소수책방의 모습이다. 작지만 은은한 스탠드에서 책을 읽을 수 있는 공간부터 햇살을 받으며 책을 읽을 수 있는 자리까지 마련했다. 이곳을 찾은 이들은 굳이 책을 구입할 필요가 없다. 맥주와 커피 등의 음료도 팔지만 역시 주문하지 않아도 된다. 그저 편안하게 공간을 이용하면 된다는 게 소수책방이 추구하는 콘셉트다. 예술과 문학 전문 서점이 주로 배치돼 있다. 책을 읽다가 떠오르는 영감을 적을 수 있게 메모지를 곳곳에 놓아 뒀다.</p> <div><a href=http://place.map.kakao.com/869347589 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_23a26f119fe3fd47c89547bd4912a27b.setContent(html_b738005745ced223b31752da9fa89860);
+        
+
+        marker_fa7b0ba001795666516db3fa08a83bed.bindPopup(popup_23a26f119fe3fd47c89547bd4912a27b)
+        ;
+
+        
+    
+    
+            marker_fa7b0ba001795666516db3fa08a83bed.bindTooltip(
+                `<div>
+                     소수책방
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_c4562a585fb537a557f723e9eee4a1bf = L.marker(
+                [37.5649807951058, 126.99519631063],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_b4f12dee6a6d997b8b2f056b2cddf0cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_c4562a585fb537a557f723e9eee4a1bf.setIcon(icon_b4f12dee6a6d997b8b2f056b2cddf0cd);
+        
+    
+        var popup_2a6309a41285c7fc0202df95fa7930bb = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_da0396c7d92d53294ed9999b4e7392b3 = $(`<div id="html_da0396c7d92d53294ed9999b4e7392b3" style="width: 100.0%; height: 100.0%;"> <h4>서향관</h4> <p>서향관이라는 서점 이름은 글과 향을 마주하는 곳이라는 뜻이 담겨 있다. 예약제로 운영되는 서향관은 이름 그대로 책방 주인의 취향을 담은 향기와 함께 직접 큐레이팅한 책들을 소개하는 공간이다. 이용 시간은 3시간에 2만원이다. 이용 고객에게는 커피와 차 등 두 잔의 음료가 무료로 제공된다. 음료를 마시면서 마음에 드는 공간에 앉아 마음껏 책을 즐길 수 있다. 서점 한 쪽 벽에는 영상도 틀어 놓아 내부 분위기를 한층 배가한다. 책은 크게 계절마다 새롭게 큐레이팅한다. 중간중간에도 주인장이 마음에 드는 책이 생기면 소개하는 것도 특징이다.</p> <div><a href=http://place.map.kakao.com/1857566050 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_2a6309a41285c7fc0202df95fa7930bb.setContent(html_da0396c7d92d53294ed9999b4e7392b3);
+        
+
+        marker_c4562a585fb537a557f723e9eee4a1bf.bindPopup(popup_2a6309a41285c7fc0202df95fa7930bb)
+        ;
+
+        
+    
+    
+            marker_c4562a585fb537a557f723e9eee4a1bf.bindTooltip(
+                `<div>
+                     서향관
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_f998757f1efa6476ca1a6f0d894c269f = L.marker(
+                [37.5679793161614, 126.99535911501],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_5dabc997f318582ba8d00e4ce97a3ae1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_f998757f1efa6476ca1a6f0d894c269f.setIcon(icon_5dabc997f318582ba8d00e4ce97a3ae1);
+        
+    
+        var popup_616f883fe88c20bd5ddc0d3b2069e40b = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_36f4ba1835095967a993cc3054a016b7 = $(`<div id="html_36f4ba1835095967a993cc3054a016b7" style="width: 100.0%; height: 100.0%;"> <h4>소요서가</h4> <p>철학 박사인 사장이 운영하는 철학 전문 서점이다. 이곳을 운영하는 윤상원 대표는 고려대 철학과를 졸업하고 파리8대학 철학과 박사 과정을 수료했다. 전문가들이 봐도 가볍지 않으면서도 철학 애호가들에게도 무겁지 않은 책들을 소개하고 있다. 동서양 철학의 고전과 양질의 해설서들을 구비하고 있고 철학 분야의 입문 교양서들도 만날 수 있다. 전문가들을 초빙해 ‘아카데미 소요’라는 이름의 철학 강의도 진행한다. 8월부터 2023년 7월까지 걸쳐 진행 중인데 강의가 끝나면 강의록을 모아 책으로 출간할 계획이다.</p> <div><a href=http://place.map.kakao.com/1970761409 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_616f883fe88c20bd5ddc0d3b2069e40b.setContent(html_36f4ba1835095967a993cc3054a016b7);
+        
+
+        marker_f998757f1efa6476ca1a6f0d894c269f.bindPopup(popup_616f883fe88c20bd5ddc0d3b2069e40b)
+        ;
+
+        
+    
+    
+            marker_f998757f1efa6476ca1a6f0d894c269f.bindTooltip(
+                `<div>
+                     소요서가
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_2fdc9d09141c273b5502546fa0cf376b = L.marker(
+                [37.56460737870172, 126.989115917446],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_da20b2f23a6d604fef71b94525b86519 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_2fdc9d09141c273b5502546fa0cf376b.setIcon(icon_da20b2f23a6d604fef71b94525b86519);
+        
+    
+        var popup_69f3b3908b4f029fd6dbc68cc769d27e = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_25ec4e098dfe25ddf98732073949cb19 = $(`<div id="html_25ec4e098dfe25ddf98732073949cb19" style="width: 100.0%; height: 100.0%;"> <h4>노말에이</h4> <p>독서 외에도 인테리어 목적으로 특이한 형태의 책을 찾는 이들이 많다. 노말에이는 이런 책들을 찾는 이들에게 제격이다. 노말에이는 디자인스튜디오 131WATT가 운영하는 책방이다. 900여 종의 국내외 서적뿐만 아니라 주인장이 직접 큐레이션한 문구류도 판매한다. 노말에이에는 일반적인 책과 다르게 생긴 책이 가득하다. 다양한 판형(책의 크기)과 제본·인쇄·후가공 방식을 살펴볼 수 있는 점이 이 서점의 매력 포인트다. 실로 엮은 책, 책 표지를 반짝이는 박으로 인쇄한 책, 지그재그로 접히는 책 등 특이한 형태의 책들을 이곳에서 만날 수 있다.</p> <div><a href=http://place.map.kakao.com/26625174 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_69f3b3908b4f029fd6dbc68cc769d27e.setContent(html_25ec4e098dfe25ddf98732073949cb19);
+        
+
+        marker_2fdc9d09141c273b5502546fa0cf376b.bindPopup(popup_69f3b3908b4f029fd6dbc68cc769d27e)
+        ;
+
+        
+    
+    
+            marker_2fdc9d09141c273b5502546fa0cf376b.bindTooltip(
+                `<div>
+                     노말에이
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_6ecacb2d729561887aea908170a8ae4f = L.marker(
+                [37.5534193031469, 127.020601519858],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_0b9c60009ac4828609c9720b6af98bd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_6ecacb2d729561887aea908170a8ae4f.setIcon(icon_0b9c60009ac4828609c9720b6af98bd6);
+        
+    
+        var popup_74414465a853fc31883e9550599f0327 = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_81d48e181f64c082ba5ad8df032f5331 = $(`<div id="html_81d48e181f64c082ba5ad8df032f5331" style="width: 100.0%; height: 100.0%;"> <h4>카모메그림책방</h4> <p>서울 성동구 금호동에 자리한 카모메 그림책방은 이름처럼 오직 그림책만을 판매하는 서점이다. 이곳은 두 가지 콘셉트로 운영된다. 첫째는 ‘어른을 위한 그림책’ 소개다. 아이뿐만 아니라 어른에게도 감동을 전하는 그림책, 웃음과 의미를 놓치지 않는 최고의 그림책을 선별해 비치했다. 둘째는 타로다. 주인장이 직접 손님과 마주하며 타로를 보고 점괘를 알려주며 또 여기에 기반해 그림책을 추천하기도 한다. 한 달에 두 번 ‘카모메 그림책방 낭독 모임’이라는 이름으로 독서 모임도 진행한다. 선착순으로 참가 신청을 받는다.</p> <div><a href=http://place.map.kakao.com/544777782 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_74414465a853fc31883e9550599f0327.setContent(html_81d48e181f64c082ba5ad8df032f5331);
+        
+
+        marker_6ecacb2d729561887aea908170a8ae4f.bindPopup(popup_74414465a853fc31883e9550599f0327)
+        ;
+
+        
+    
+    
+            marker_6ecacb2d729561887aea908170a8ae4f.bindTooltip(
+                `<div>
+                     카모메그림책방
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_273eb6054b799154189c91380001a704 = L.marker(
+                [37.54433663273804, 127.04982170056492],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_eaca48817b4578a3a9d8d96ca96facf9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_273eb6054b799154189c91380001a704.setIcon(icon_eaca48817b4578a3a9d8d96ca96facf9);
+        
+    
+        var popup_02be268a2e240bed24a50f303a0243cf = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_0a57afba42a29f41adca3c8a0a80d265 = $(`<div id="html_0a57afba42a29f41adca3c8a0a80d265" style="width: 100.0%; height: 100.0%;"> <h4>쎄임더스트</h4> <p>쎄임더스트는 서울 성수동에 자리한 사진 전문 출판사와 서점이다. 눈에 띄는 파스텔 색 책장 위에 각기 다른 나라에서 발간한 각양각색의 사진책들을 구매할 수 있도록 해 입구에서부터 눈길을 사로잡는다. 한국인 부인과 결혼한 영국인 포토그래퍼가 직접 운영하고 있다. 그가 직접 큐레이팅한 포토북과 함께 사진과 관련된 굿즈들도 판매한다. 영어를 못한다고 해서 발길을 돌리지 않아도 된다. 영국인 주인장의 한국어 실력이 유창하다. 그가 우리말로 친절하게 사진을 기반으로 하는 국내외 작가의 책을 소개하고 추천해 주는 것도 이 책방의 매력이다.</p> <div><a href=http://place.map.kakao.com/28593490 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_02be268a2e240bed24a50f303a0243cf.setContent(html_0a57afba42a29f41adca3c8a0a80d265);
+        
+
+        marker_273eb6054b799154189c91380001a704.bindPopup(popup_02be268a2e240bed24a50f303a0243cf)
+        ;
+
+        
+    
+    
+            marker_273eb6054b799154189c91380001a704.bindTooltip(
+                `<div>
+                     쎄임더스트
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_182ca41318718e7d8fc16c0561445a96 = L.marker(
+                [37.5457234109088, 127.044982828142],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_3da6efa042b05f8db9a6ce4c89511741 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_182ca41318718e7d8fc16c0561445a96.setIcon(icon_3da6efa042b05f8db9a6ce4c89511741);
+        
+    
+        var popup_98cc2707db4d1bee9cb526c514537ece = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_353d6aa9f89b4b11c81e64700b27f1a3 = $(`<div id="html_353d6aa9f89b4b11c81e64700b27f1a3" style="width: 100.0%; height: 100.0%;"> <h4>트립북앤스페이스</h4> <p>TLIB는 트래블링 라이브러리(Traveling Library)의 약자로 여행하는 지식 서재라는 의미를 담았다. 관광학과 교수와 전공자들이 함께 운영하는 여행 전문 서점이다. 여러 작가들이 쓴 해외 탐방기나 관광지를 소개한 책들을 이곳에서 볼 수 있다. 여행 책 외에도 인문·환경·철학 등 다양한 책을 구비했다. 인생 자체가 여행인 만큼 어떤 주제의 책도 여행 관련 서적에 포함될 수 있단는 게 주인장들의 철학이다. 매월 독서 모임, 여행 모임 등 다양한 프로그램을 운영하며 내부에는 루프톱 공간도 마련해 야외에서 책을 읽어 볼 수도 있게 했다.</p> <div><a href=http://place.map.kakao.com/1953362466 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_98cc2707db4d1bee9cb526c514537ece.setContent(html_353d6aa9f89b4b11c81e64700b27f1a3);
+        
+
+        marker_182ca41318718e7d8fc16c0561445a96.bindPopup(popup_98cc2707db4d1bee9cb526c514537ece)
+        ;
+
+        
+    
+    
+            marker_182ca41318718e7d8fc16c0561445a96.bindTooltip(
+                `<div>
+                     트립북앤스페이스
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_1a5f8953c674d40e1e082b5b9e2d2d40 = L.marker(
+                [37.5824655305301, 127.00401684144],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_c0b19b39fd342f7134de95c37ff1f821 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_1a5f8953c674d40e1e082b5b9e2d2d40.setIcon(icon_c0b19b39fd342f7134de95c37ff1f821);
+        
+    
+        var popup_ab5c08e6eb1076c01faacce4a84a1c84 = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_8ce2b76a4e920d024ede2fc0a97c68ea = $(`<div id="html_8ce2b76a4e920d024ede2fc0a97c68ea" style="width: 100.0%; height: 100.0%;"> <h4>어쩌다산책</h4> <p>큐레이션 서점과 카페·프로젝트룸이 함께 있는 독립 서점이다. 각 공간마다 뚜렷한 특징이 있고 책과 함께 커피와 공연도 즐길 수 있는 것이 이곳의 강점이다. 우선 서점에서는 매달 하나의 주제를 선정하고 여기에 맞는 책을 선정한다. 카페에서는 매달 시그니처 메뉴를 새롭게 공개하며 프로젝트룸에서는 특정 브랜드를 소개하고 있다. 외관도 눈길을 끈다. 서점은 지하 1층에 자리했는데 계단을 내려가면 입구 앞에 깔끔하게 조성한 일본식 중정이 가장 먼저 눈에 들어온다. 서점 내부에는 통유리를 달아 책을 보며 정원을 감상할 수 있게 한 것도 특징이다.</p> <div><a href=http://place.map.kakao.com/565354461 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_ab5c08e6eb1076c01faacce4a84a1c84.setContent(html_8ce2b76a4e920d024ede2fc0a97c68ea);
+        
+
+        marker_1a5f8953c674d40e1e082b5b9e2d2d40.bindPopup(popup_ab5c08e6eb1076c01faacce4a84a1c84)
+        ;
+
+        
+    
+    
+            marker_1a5f8953c674d40e1e082b5b9e2d2d40.bindTooltip(
+                `<div>
+                     어쩌다산책
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_7569c52382bae2527287bf61764b5d1d = L.marker(
+                [37.58556861817261, 127.0006023247886],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_1930b4707a49c4c9344b668f0ffe2bc0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_7569c52382bae2527287bf61764b5d1d.setIcon(icon_1930b4707a49c4c9344b668f0ffe2bc0);
+        
+    
+        var popup_2af98ff33d5e59875f3b7161e490d6d4 = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_683b17bbd7d4142dd23339c94425897a = $(`<div id="html_683b17bbd7d4142dd23339c94425897a" style="width: 100.0%; height: 100.0%;"> <h4>위트앤시니컬</h4> <p>유희경 시인이 운영하는 시 전문 서점이다. 이곳에서는 ‘시집’ 외에 다른 책들은 찾아볼 수 없다. 따라서 시를 읽고 쓰는 것을 좋아하는 이들에게 추천할 만한 서점이다. 시 전문 서점답게 시를 즐길 수 있는 다양한 프로그램도 마련돼 있다. 함께 시를 낭독하거나 직접 시를 쓰는 프로그램이 꾸준히 진행 중이다. ‘시인의 책상’이라는 프로그램도 있는데 방문객들이 자신이 직접 쓴 시를 책방지기인 유희경 시인에게 전달하는 방식으로 진행한다. 또 활발하게 활동 중인 시인을 초청해 시 창작 강의를 진행하기도 한다.</p> <div><a href=http://place.map.kakao.com/1735824591 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_2af98ff33d5e59875f3b7161e490d6d4.setContent(html_683b17bbd7d4142dd23339c94425897a);
+        
+
+        marker_7569c52382bae2527287bf61764b5d1d.bindPopup(popup_2af98ff33d5e59875f3b7161e490d6d4)
+        ;
+
+        
+    
+    
+            marker_7569c52382bae2527287bf61764b5d1d.bindTooltip(
+                `<div>
+                     위트앤시니컬
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_7ebef7b44870940bdd1788b60fa9e5e0 = L.marker(
+                [37.5806439325002, 126.9714140997324],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_fd5630db8fb0b991a30c9c8707488490 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_7ebef7b44870940bdd1788b60fa9e5e0.setIcon(icon_fd5630db8fb0b991a30c9c8707488490);
+        
+    
+        var popup_e8c33b749aa26773d5ef36531c370ea4 = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_2103edeb2872841ae59248bfb534fe87 = $(`<div id="html_2103edeb2872841ae59248bfb534fe87" style="width: 100.0%; height: 100.0%;"> <h4>일일호일</h4> <p>코로나19 사태를 계기로 건강에 대한 관심도 높아지고 있다. ‘매일매일 건강한 하루’라는 뜻을 담은 일일호일은 이 같은 소비자의 니즈에 맞는 건강 전문 책방을 표방한다. 내부에는 책방지기가 건강에 대한 새로운 시각을 제시하는 100여 권의 책을 선별해 소개하고 있다. 책은 신체·정신·사회·둥물·환경 등 다섯 개의 카테고리로 나눠 진열돼 있고 책과 함께 커피·건강 음료·디저트를 즐길 수 있는 것도 이곳의 특징이다. 책방지기는 일일호일을 일상 속 건강의 가치를 발견하고 함께 소통하는 것을 목표로 운영 중이다.</p> <div><a href=http://place.map.kakao.com/561745915 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_e8c33b749aa26773d5ef36531c370ea4.setContent(html_2103edeb2872841ae59248bfb534fe87);
+        
+
+        marker_7ebef7b44870940bdd1788b60fa9e5e0.bindPopup(popup_e8c33b749aa26773d5ef36531c370ea4)
+        ;
+
+        
+    
+    
+            marker_7ebef7b44870940bdd1788b60fa9e5e0.bindTooltip(
+                `<div>
+                     일일호일
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_352e6200c7956cb9d9f951a2bcdc665b = L.marker(
+                [37.549336556185, 126.915756111119],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_3a355a47d7ea7e0ae47299f546fade73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_352e6200c7956cb9d9f951a2bcdc665b.setIcon(icon_3a355a47d7ea7e0ae47299f546fade73);
+        
+    
+        var popup_26853a107de199fde3227e1592189a1f = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_7198f451efc5f0380b2598f1edc7a7be = $(`<div id="html_7198f451efc5f0380b2598f1edc7a7be" style="width: 100.0%; height: 100.0%;"> <h4>종이잡지클럽</h4> <p>잡지 마니아인 책방지기가 두 명의 동업자와 함께 만든 공간이다. 미국 유학 후 귀국해 평범한 직장 생활을 하던 책방지기는 해외에서 즐겨 보던 다양한 잡지들이 한국에 유통되지 않아 아쉽다는 생각을 갖게 됐다. 또 한국에 편하게 잡지를 읽을 공간이 없다는 사실에도 주목해 오롯이 잡지를 읽을 수 있는 공간인 종이잡지클럽을 만들었다. 종이잡지클럽은 5000원만 내면 한국뿐만 아니라 해외에서만 구할 수 있었던 유명 잡지부터 희귀한 잡지 600여 종을 하루 종일 읽을 수 있다. 또한 원하는 잡지는 직접 구매할 수도 있다.</p> <div><a href=http://place.map.kakao.com/926151993 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_26853a107de199fde3227e1592189a1f.setContent(html_7198f451efc5f0380b2598f1edc7a7be);
+        
+
+        marker_352e6200c7956cb9d9f951a2bcdc665b.bindPopup(popup_26853a107de199fde3227e1592189a1f)
+        ;
+
+        
+    
+    
+            marker_352e6200c7956cb9d9f951a2bcdc665b.bindTooltip(
+                `<div>
+                     종이잡지클럽
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_0017bedb81a2e31ec89fd3cd933d2ecd = L.marker(
+                [37.5587501102113, 126.915659498427],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_3da1c641d103dde4379f22484a1de42c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_0017bedb81a2e31ec89fd3cd933d2ecd.setIcon(icon_3da1c641d103dde4379f22484a1de42c);
+        
+    
+        var popup_2dbbe36820c88cb8038d1a6c36952acf = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_18602ff085296b1bf2acb30c0c826a3f = $(`<div id="html_18602ff085296b1bf2acb30c0c826a3f" style="width: 100.0%; height: 100.0%;"> <h4>책방사춘기</h4> <p>어린이와 청소년을 위한 그림책과 동화·문학을 소개하는 작은 서점이다. 책을 주제로 매달 다양한 전시를 진행하고 있다. 책방지기는 문학 비평을 공부하다가 아동 문학이 결코 유치하지 않은 이야기라는 것을 깨닫고 매력을 느껴 직접 책방까지 오픈하게 됐다. 대형 서점에서 판매 중인 유명 책뿐만 아니라 어린이와 청소년을 대상으로 쓴 독립 서적까지 볼 수 있는 것도 이곳이 가진 매력이다. 그렇다고 해서 어린이와 청소년만을 타깃으로 하는 것은 아니다. 몸은 어른이지만 마음은 여전히 사춘기인 ‘어른이’들도 환영한다.</p> <div><a href=http://place.map.kakao.com/1530156641 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_2dbbe36820c88cb8038d1a6c36952acf.setContent(html_18602ff085296b1bf2acb30c0c826a3f);
+        
+
+        marker_0017bedb81a2e31ec89fd3cd933d2ecd.bindPopup(popup_2dbbe36820c88cb8038d1a6c36952acf)
+        ;
+
+        
+    
+    
+            marker_0017bedb81a2e31ec89fd3cd933d2ecd.bindTooltip(
+                `<div>
+                     책방사춘기
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_be02428e1f86299c325442d62ae792b6 = L.marker(
+                [37.5596288645493, 126.903113675901],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_9365b46f23e52f0ae7a46d8a454f73ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_be02428e1f86299c325442d62ae792b6.setIcon(icon_9365b46f23e52f0ae7a46d8a454f73ff);
+        
+    
+        var popup_8c89f09b5b38f5ad00f89d58d144497b = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_83a2eefd53ec30a61ffb603963df8c26 = $(`<div id="html_83a2eefd53ec30a61ffb603963df8c26" style="width: 100.0%; height: 100.0%;"> <h4>책방이올시다</h4> <p>독서를 파는 서점을 표방하는 곳이다. 자칭 독서 전문가인 책방지기가 독서를 사랑하는 사람이 더욱 많아지기를 바라는 마음에서 연 책방이다. 향·술·영화·브랜딩·동물 등 흥미로운 키워드 28개를 중심으로 책을 분류해 소개하고 판매한다. 여느 동네 서점과 마찬가지로 책을 함께 읽고 감상을 나누는 독서 모임도 정기적으로 열고 있다. 책방지기는 이곳을 책만 파는 것이 아니라 독서 경험을 사는 공간으로 만들겠다는 목표를 갖고 운영 중이다. 오프라인뿐만 아니라 온라인에서도 익명으로 참여할 수 있는 다양한 모임을 진행한다.</p> <div><a href=http://place.map.kakao.com/742039844 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_8c89f09b5b38f5ad00f89d58d144497b.setContent(html_83a2eefd53ec30a61ffb603963df8c26);
+        
+
+        marker_be02428e1f86299c325442d62ae792b6.bindPopup(popup_8c89f09b5b38f5ad00f89d58d144497b)
+        ;
+
+        
+    
+    
+            marker_be02428e1f86299c325442d62ae792b6.bindTooltip(
+                `<div>
+                     책방이올시다
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_dddd3e613cb0d2f18218aaf2b1f83cd8 = L.marker(
+                [37.6186841870179, 127.044650694538],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_d8238e3701136810c29e2510d1acd422 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_dddd3e613cb0d2f18218aaf2b1f83cd8.setIcon(icon_d8238e3701136810c29e2510d1acd422);
+        
+    
+        var popup_16a916babd25d2e9441aed533fbb265c = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_6074f8cfdf080ae6024862126c640fba = $(`<div id="html_6074f8cfdf080ae6024862126c640fba" style="width: 100.0%; height: 100.0%;"> <h4>감성인간서점</h4> <p>책을 추천 받고 모임도 갖는 느슨한 연대 공간을 지향하는 서점이다. 스스로를 감성 인간이라고 지칭하는 책방지기가 직접 읽고 좋았던 책들만 큐레이션해 판매하고 있다. 특히 이곳에는 느슨한 연대 공간을 지향한다는 취지에 걸맞게 독서 모임, 블로그 강의, 원데이 클래스, 북 토크 등 다양한 모임이 열리고 있다. 이 같은 모임들은 책을 좋아하는 이들이면 누구나 참여할 수 있는데, 다만 소통의 원활함을 위해 나이 제한(24~36세)을 두고 있다는 점을 유의하자. 또 모임이 끝난 뒤에는 뒤풀이도 열과 책 또는 인생에 대한 얘기를 함께 나눈다.</p> <div><a href=http://place.map.kakao.com/1832033447 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_16a916babd25d2e9441aed533fbb265c.setContent(html_6074f8cfdf080ae6024862126c640fba);
+        
+
+        marker_dddd3e613cb0d2f18218aaf2b1f83cd8.bindPopup(popup_16a916babd25d2e9441aed533fbb265c)
+        ;
+
+        
+    
+    
+            marker_dddd3e613cb0d2f18218aaf2b1f83cd8.bindTooltip(
+                `<div>
+                     감성인간서점
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_216efd56fd1028ae60675d93e866ac21 = L.marker(
+                [37.604670671382, 127.024647270596],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_7e9600a1358771e0f9b4af930594c8b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_216efd56fd1028ae60675d93e866ac21.setIcon(icon_7e9600a1358771e0f9b4af930594c8b4);
+        
+    
+        var popup_0905b5edde3f9af6caae3b72b46548c6 = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_b026c2692387b3497f2fc361d4c9f7d7 = $(`<div id="html_b026c2692387b3497f2fc361d4c9f7d7" style="width: 100.0%; height: 100.0%;"> <h4>세화영어서점</h4> <p>영어를 잘하고 싶은 마음은 학생이나 직장인이나 매한가지다. 학생들은 학업 성적을 위해 직장인은 자기 계발을 목적으로 영어 공부를 한다. 세화영어서점은 이처럼 영어를 꾸준히 공부하는 이들을 타깃으로 운영 중인 영문학 전문 서점이다. 세화영어서점에서는 해외 서점에서 판매하고 있는 영어 원서를 직수입해 판매한다. 성인을 위한 문학과 비문학부터 어린이를 위한 동화책과 팝업북 등 다양한 분야의 영어 원서들이 구비돼 있다. 그뿐만 아니라 헌책도 판매 중이다. 이 밖에 영어 관연 북클럽과 소규모 음악회 등 문화 예술 모임도 연다.</p> <div><a href=http://place.map.kakao.com/1949544942 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_0905b5edde3f9af6caae3b72b46548c6.setContent(html_b026c2692387b3497f2fc361d4c9f7d7);
+        
+
+        marker_216efd56fd1028ae60675d93e866ac21.bindPopup(popup_0905b5edde3f9af6caae3b72b46548c6)
+        ;
+
+        
+    
+    
+            marker_216efd56fd1028ae60675d93e866ac21.bindTooltip(
+                `<div>
+                     세화영어서점
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_5f9786f6c3638e8b86c4f915072b9b8e = L.marker(
+                [37.5593578691447, 126.943709158943],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_c649b06870794dfc3603bcf36a23c3ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_5f9786f6c3638e8b86c4f915072b9b8e.setIcon(icon_c649b06870794dfc3603bcf36a23c3ee);
+        
+    
+        var popup_98151a18cf02fba1ed8daa1991898a7f = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_ec88a5878452bfc383afa1e1cf6a1197 = $(`<div id="html_ec88a5878452bfc383afa1e1cf6a1197" style="width: 100.0%; height: 100.0%;"> <h4>미스터리 유니온</h4> <p>‘미스터리유니온’은 서점 이름에 걸맞게 오로지 추리 소설만 판매하는 책방이다. 책방지기가 엄선한 전 세계의 유명 추리 소설들을 이곳에서 구매할 수 있다. 추리 소설은 나라별로 구분해 놓았고 히가시노 게이고 같은 유명 추리 소설 작가들의 책만 모아 놓은 칸이 따로 있기도 하다. 다만 책 진열 방식은 주인 마음에 따라 언제든 바뀔 수 있다. 미스터리유니온에는 현재 1600여 권에 달하는 추리 소설을 판매 중이다. 추리 소설 입문자도 가볼 만하다. 추리 소설 마니아인 책방지기에게 원하는 내용의 추리 소설을 직접 추천받을 수 있다.</p> <div><a href=http://place.map.kakao.com/1000076964 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_98151a18cf02fba1ed8daa1991898a7f.setContent(html_ec88a5878452bfc383afa1e1cf6a1197);
+        
+
+        marker_5f9786f6c3638e8b86c4f915072b9b8e.bindPopup(popup_98151a18cf02fba1ed8daa1991898a7f)
+        ;
+
+        
+    
+    
+            marker_5f9786f6c3638e8b86c4f915072b9b8e.bindTooltip(
+                `<div>
+                     미스터리 유니온
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_131a6aec616cc906b3c7298e8421ce7a = L.marker(
+                [37.5702240115615, 126.930429918725],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_579b2d6591728fa63e92c10724c9dd2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_131a6aec616cc906b3c7298e8421ce7a.setIcon(icon_579b2d6591728fa63e92c10724c9dd2f);
+        
+    
+        var popup_abd813118116b91a9760716de385a322 = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_cc6647f9614d7116a51796b186360224 = $(`<div id="html_cc6647f9614d7116a51796b186360224" style="width: 100.0%; height: 100.0%;"> <h4>페잇퍼</h4> <p>연희동에 있는 서점으로 오로지 회원들만 들어갈 수 있는 만화책·그림책방을 지향한다. 비밀스러운 공간에서 그림책과 만화책 비슷한 듯 다른 두 장르의 책을 소개한다. 아는 사람만 알고 오는 비밀스럽고 안전한 공간을 목표로 운영 중이다. 그래서 출입 방법도 독특하다. 홈 페이지에서 회원 가입을 하고 입장료를 지불하면 비밀 번호가 부여된다. 이 비밀 번호를 잘 기억한 뒤 출입구에서 알아서 찍고 들어가 책을 즐기면 된다. 북토크·독서·글쓰기 모임도 열고 있고 공간도 대여하니 참고하자.<광진구>*닻프레스다크룸</p> <div><a href=http://place.map.kakao.com/344946288 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_abd813118116b91a9760716de385a322.setContent(html_cc6647f9614d7116a51796b186360224);
+        
+
+        marker_131a6aec616cc906b3c7298e8421ce7a.bindPopup(popup_abd813118116b91a9760716de385a322)
+        ;
+
+        
+    
+    
+            marker_131a6aec616cc906b3c7298e8421ce7a.bindTooltip(
+                `<div>
+                     페잇퍼
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_3032e26294445d974721a155e86905f4 = L.marker(
+                [37.6084126291181, 126.932078444549],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_e69b6ccf2128b3c8d25e3a7ecb73a04d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_3032e26294445d974721a155e86905f4.setIcon(icon_e69b6ccf2128b3c8d25e3a7ecb73a04d);
+        
+    
+        var popup_d5f61402da074c7580aef21cca3e7928 = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_c688810d4fb0d0965e28c70fb9437855 = $(`<div id="html_c688810d4fb0d0965e28c70fb9437855" style="width: 100.0%; height: 100.0%;"> <h4>한평책빵</h4> <p>은평구 서울혁신파크 후문에 있던 경비실을 고쳐 연 서점으로 커뮤니티 서점을 지향한다. 서점에서 빵을 팔고 있지는 않지만 마음의 양식이 되는 책을 판다는 뜻을 담아 이름을 한평책빵으로 지었다. 이 서점 역시 여느 서점처럼 책방지기가 직접 고른 새책과 헌책을 소개한다. 차별성이 있다면 단골손님들로부터 다양한 분야의 책을 추천받아 소개하고 있다는 점이다. 또 ‘한평 모임’이라는 이름으로 독서 모임과 북토크·워크숍 등을 정기적으로로 열고 있기도 하다. 지역 주민과 서울혁신파크 방문자를 위한 작은 책방으로 자리매김했다.</p> <div><a href=http://place.map.kakao.com/632146853 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_d5f61402da074c7580aef21cca3e7928.setContent(html_c688810d4fb0d0965e28c70fb9437855);
+        
+
+        marker_3032e26294445d974721a155e86905f4.bindPopup(popup_d5f61402da074c7580aef21cca3e7928)
+        ;
+
+        
+    
+    
+            marker_3032e26294445d974721a155e86905f4.bindTooltip(
+                `<div>
+                     한평책빵
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_a04af825d2d3bfbceeab3de3f7c5a8bc = L.marker(
+                [37.5449185605308, 126.986986894375],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_de8664c97ce12e3328c751f0295a3582 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_a04af825d2d3bfbceeab3de3f7c5a8bc.setIcon(icon_de8664c97ce12e3328c751f0295a3582);
+        
+    
+        var popup_69c823719b292cabe7fcfbfbcf738def = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_878065dad9a7d373023c6fef11870dc5 = $(`<div id="html_878065dad9a7d373023c6fef11870dc5" style="width: 100.0%; height: 100.0%;"> <h4>별책부록</h4> <p>국내외 독립 출판물과 디자인·예술 관련 단행본, 소규모 브랜드의 디자인 제품을 판매하고 있는 서점이다. 2014년 마포구 동교동에서 처음 오픈했는데 2015년부터 현재 자리인 용산으로 이전해 현재까지 운영하고 있다. 자체적으로 영화 관련 독립 출판 잡지 ‘캐스트(cast)를’ 발행하고 있는 것도 이곳의 특징이다. 매 호마다 하나의 주제를 선정해 되새겨볼 만한 영화 얘기를 하는 매거진이다. 이 밖에 영상 에세이, 에코백 만들기 등 다양한 강좌를 진행하며 용산을 대표하는 동네 서점으로 안착했다.</p> <div><a href=http://place.map.kakao.com/27544986 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_69c823719b292cabe7fcfbfbcf738def.setContent(html_878065dad9a7d373023c6fef11870dc5);
+        
+
+        marker_a04af825d2d3bfbceeab3de3f7c5a8bc.bindPopup(popup_69c823719b292cabe7fcfbfbcf738def)
+        ;
+
+        
+    
+    
+            marker_a04af825d2d3bfbceeab3de3f7c5a8bc.bindTooltip(
+                `<div>
+                     별책부록
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_87b5f5ddf6ee5c6ba41c1d560fefcd0d = L.marker(
+                [37.4817112567771, 126.956547993315],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_ef7ae924b12e5ff78b01823094cb23b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_87b5f5ddf6ee5c6ba41c1d560fefcd0d.setIcon(icon_ef7ae924b12e5ff78b01823094cb23b8);
+        
+    
+        var popup_87b0e9cedb30f53d7dbde312fd1efb10 = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_eb018ebfb135857d4d1e5a4a6bf28201 = $(`<div id="html_eb018ebfb135857d4d1e5a4a6bf28201" style="width: 100.0%; height: 100.0%;"> <h4>엠프티폴더스</h4> <p>봉천동에 있는 작은 책방으로 책방지기가 좋아하는 것을 모아 놓은 것이 특징이다. 도감·매뉴얼·인터뷰집·아카이브북·가이드북·매거진·시리즈 등을 주로 소개하고 있다. 주인장은 이 공간에서 자신의 취향과 지식을 손님들과 공유하길 바란다.</p> <div><a href=http://place.map.kakao.com/376000568 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_87b0e9cedb30f53d7dbde312fd1efb10.setContent(html_eb018ebfb135857d4d1e5a4a6bf28201);
+        
+
+        marker_87b5f5ddf6ee5c6ba41c1d560fefcd0d.bindPopup(popup_87b0e9cedb30f53d7dbde312fd1efb10)
+        ;
+
+        
+    
+    
+            marker_87b5f5ddf6ee5c6ba41c1d560fefcd0d.bindTooltip(
+                `<div>
+                     엠프티폴더스
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_a3bea271ebf5b270092821e1f1d399fe = L.marker(
+                [37.482961004269626, 126.9542882523412],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_ea09ac6f15a5d354899935983f777d38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_a3bea271ebf5b270092821e1f1d399fe.setIcon(icon_ea09ac6f15a5d354899935983f777d38);
+        
+    
+        var popup_27c214ff3e88d41136e48b8b911e6a15 = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_df85e7c6239245483eb4f63695a92dde = $(`<div id="html_df85e7c6239245483eb4f63695a92dde" style="width: 100.0%; height: 100.0%;"> <h4>관객의취향</h4> <p>영화 전문 서점이다. 영화 관련 도서와 독립 출판물을 주로 소개하고 있고 커피와 술을 함께 판매 중이다. ‘영감을 주는 가치 있는 소비를 지향하는 공간’을 목표로 운영 중인데 여기에 맞게 영화를 상영하고 동네 주민을 초대해 소통하고 있는 것이 특징이다.</p> <div><a href=http://place.map.kakao.com/32914550 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_27c214ff3e88d41136e48b8b911e6a15.setContent(html_df85e7c6239245483eb4f63695a92dde);
+        
+
+        marker_a3bea271ebf5b270092821e1f1d399fe.bindPopup(popup_27c214ff3e88d41136e48b8b911e6a15)
+        ;
+
+        
+    
+    
+            marker_a3bea271ebf5b270092821e1f1d399fe.bindTooltip(
+                `<div>
+                     관객의취향
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_daa6e23c99ec18c3b5ebbb9bec3d9973 = L.marker(
+                [37.4976089145784, 126.886457136423],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_1b0f62876a3dbd0f8c8313fbd6174335 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_daa6e23c99ec18c3b5ebbb9bec3d9973.setIcon(icon_1b0f62876a3dbd0f8c8313fbd6174335);
+        
+    
+        var popup_482e0cbac290791bf1da255169f5fda4 = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_8cf1b564dafc8610e82caea17cc522ab = $(`<div id="html_8cf1b564dafc8610e82caea17cc522ab" style="width: 100.0%; height: 100.0%;"> <h4>인공위성</h4> <p>‘인공위성’의 책들은 모두 기부 받은 책들이다. 책을 기부 받을 때 기부자들이 책을 읽은 뒤 느낀 감정들을 질문으로 함께 적어 내도록 하는데 이때 적어 낸 질문들이 책의 새 제목이 돼 포장이 입혀진다. 책과 질문을 기부한 사람에게는 무료로 커피를 제공한다.</p> <div><a href=http://place.map.kakao.com/935698184 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_482e0cbac290791bf1da255169f5fda4.setContent(html_8cf1b564dafc8610e82caea17cc522ab);
+        
+
+        marker_daa6e23c99ec18c3b5ebbb9bec3d9973.bindPopup(popup_482e0cbac290791bf1da255169f5fda4)
+        ;
+
+        
+    
+    
+            marker_daa6e23c99ec18c3b5ebbb9bec3d9973.bindTooltip(
+                `<div>
+                     인공위성
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_66ced78f867961219b27d80ad294e9e0 = L.marker(
+                [37.4956028253848, 126.840797296176],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_8162afbfe4ae362774156c577d298398 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_66ced78f867961219b27d80ad294e9e0.setIcon(icon_8162afbfe4ae362774156c577d298398);
+        
+    
+        var popup_d2293724ac2209e3026566da7d28f797 = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_6f103db49b9646f1e5bf36a6f4721dd6 = $(`<div id="html_6f103db49b9646f1e5bf36a6f4721dd6" style="width: 100.0%; height: 100.0%;"> <h4>콕콕콕</h4> <p>그림책 전문 서점이면서 인형 공방을 겸하고 있다. 책방지기가 선별한 그림책을 소개하고 있고 자신만의 캐릭터 인형을 만들 수 있는 프로그램도 제공한다. 또 그림책 낭독 모임과 인형 만들기 워크숍 등을 정기적으로 여는 것도 특징이다.</p> <div><a href=http://place.map.kakao.com/1336565481 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_d2293724ac2209e3026566da7d28f797.setContent(html_6f103db49b9646f1e5bf36a6f4721dd6);
+        
+
+        marker_66ced78f867961219b27d80ad294e9e0.bindPopup(popup_d2293724ac2209e3026566da7d28f797)
+        ;
+
+        
+    
+    
+            marker_66ced78f867961219b27d80ad294e9e0.bindTooltip(
+                `<div>
+                     콕콕콕
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_00ea20a266d8d29c641db903669897ed = L.marker(
+                [37.5433414276528, 127.145304630935],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_8e39416efa95bac6dfc71981e617f71e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_00ea20a266d8d29c641db903669897ed.setIcon(icon_8e39416efa95bac6dfc71981e617f71e);
+        
+    
+        var popup_77b8273ea0c1dcd4d68b4bfb682eff7b = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_88cdc794001d5ebdbfed08b4388e50ae = $(`<div id="html_88cdc794001d5ebdbfed08b4388e50ae" style="width: 100.0%; height: 100.0%;"> <h4>아운트</h4> <p>원래 가죽을 만드는 공방이었다. 책방지기는 취미로 책을 읽는 것을 좋아해 공방 안에 책을 여러 권 놓아 뒀는데 서점이라고 착각해 들어오는 사람들이 많아 책방을 겸업하게 됐다. 책방은 주말에만 운영하며 책방지기가 읽은 책 중에 같이 읽고 싶은 책을 선별해 소개하고 있다.</p> <div><a href=http://place.map.kakao.com/608734245 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_77b8273ea0c1dcd4d68b4bfb682eff7b.setContent(html_88cdc794001d5ebdbfed08b4388e50ae);
+        
+
+        marker_00ea20a266d8d29c641db903669897ed.bindPopup(popup_77b8273ea0c1dcd4d68b4bfb682eff7b)
+        ;
+
+        
+    
+    
+            marker_00ea20a266d8d29c641db903669897ed.bindTooltip(
+                `<div>
+                     아운트
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_189835dd77557d3764ef3ffd70b21051 = L.marker(
+                [37.546174775106, 126.833329933422],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_e5a8d85b0647b44e11284bd3eb888753 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_189835dd77557d3764ef3ffd70b21051.setIcon(icon_e5a8d85b0647b44e11284bd3eb888753);
+        
+    
+        var popup_65902e1b01b52d09e6d4391ea61c7bb1 = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_0b2399c40903b4d91e54d97295beb831 = $(`<div id="html_0b2399c40903b4d91e54d97295beb831" style="width: 100.0%; height: 100.0%;"> <h4>악어책방</h4> <p>서울 강서구 화곡동에서 회원제로 운영 중인 동네 책방이다. 책방지기는 이곳이 지역 주민이 모이는 ‘문화 발전소’가 되길 바라며 운영하고 있다. 그림책과 심리 분야의 책을 주로 소개하고 있고 아이들을 위한 책방 놀이터도 진행 중이다.</p> <div><a href=http://place.map.kakao.com/1410447308 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_65902e1b01b52d09e6d4391ea61c7bb1.setContent(html_0b2399c40903b4d91e54d97295beb831);
+        
+
+        marker_189835dd77557d3764ef3ffd70b21051.bindPopup(popup_65902e1b01b52d09e6d4391ea61c7bb1)
+        ;
+
+        
+    
+    
+            marker_189835dd77557d3764ef3ffd70b21051.bindTooltip(
+                `<div>
+                     악어책방
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_d92d45b4410a1a54d1cdac38cbc4055d = L.marker(
+                [37.5263648659841, 127.038916516041],
+                {}
+            ).addTo(map_116dcabb1ae46640daf82ac5f36f0179);
+        
+    
+            var icon_59bb0e0fa1c663b268311a08ad2d28c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "iconColor": "white", "prefix": "fa"}
+            );
+            marker_d92d45b4410a1a54d1cdac38cbc4055d.setIcon(icon_59bb0e0fa1c663b268311a08ad2d28c4);
+        
+    
+        var popup_b4138673abed041d12c389eb4f5247e1 = L.popup({"maxWidth": 300, "minWidth": 100});
+
+        
+            var html_8700a95af638ecfbb80073182c359e5d = $(`<div id="html_8700a95af638ecfbb80073182c359e5d" style="width: 100.0%; height: 100.0%;"> <h4>콜링북스</h4> <p>세 평의 작은 공간에 마련한 큐레이션 서점이다. 책이 사람을 부르는 서점이라는 의미를 담아 콜링북스로 이름 지었다. 여행 작가로도 활동 중인 책방지기가 주제별로 책을 추천하는 블라인드북 서비스를 제공하고 있는 것이 특징이다.</p> <div><a href=http://place.map.kakao.com/1691095914 target="_blank" rel="noopener noreferrer">상세보기</a></div> </div>`)[0];
+            popup_b4138673abed041d12c389eb4f5247e1.setContent(html_8700a95af638ecfbb80073182c359e5d);
+        
+
+        marker_d92d45b4410a1a54d1cdac38cbc4055d.bindPopup(popup_b4138673abed041d12c389eb4f5247e1)
+        ;
+
+        
+    
+    
+            marker_d92d45b4410a1a54d1cdac38cbc4055d.bindTooltip(
+                `<div>
+                     콜링북스
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+</script>
